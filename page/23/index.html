@@ -8,8 +8,8 @@
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/man-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/man-16x16.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="Edlison blog">
@@ -53,8 +53,17 @@
   };
 </script>
 
-  <title>Edlison is talking here.</title>
+  <title>Edlison is talking here. - Edlison blog</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1B9EHJMCZY"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1B9EHJMCZY');
+      }
+    </script>
 
 
 
@@ -106,6 +115,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -127,6 +139,30 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
 
 
 
@@ -166,29 +202,32 @@
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">209</span>
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">210</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">100</span>
+          
+        <span class="site-state-item-count">101</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/edlison" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;edlison" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VkbGlzb24=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;edlison"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:bolin.edlison.shen@gmail.com" title="E-Mail → mailto:bolin.edlison.shen@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOmJvbGluLmVkbGlzb24uc2hlbkBnbWFpbC5jb20=" title="E-Mail → mailto:bolin.edlison.shen@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -218,6 +257,113 @@
       
 
       
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/2021/01/27/linux/linux-ftp/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bolin Shen">
+      <meta itemprop="description" content="Edlison blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Edlison is talking here.">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/27/linux/linux-ftp/" class="post-title-link" itemprop="url">linux/linux-ftp</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-01-27 13:43:49 / 修改时间：15:37:17" itemprop="dateCreated datePublished" datetime="2021-01-27T13:43:49+08:00">2021-01-27</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Notebook/" itemprop="url" rel="index"><span itemprop="name">Notebook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h1><ol>
+<li>yum安装vsftpd</li>
+</ol>
+<p><code>yum install vsftpd</code></p>
+<ol start="2">
+<li>设置开机启动</li>
+</ol>
+<p><code>systemctl enable vsftpd</code></p>
+<ol start="3">
+<li>启动FTP</li>
+</ol>
+<p><code>systemctl start vsftpd</code></p>
+<h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>所在目录</p>
+<p><code>cd /etc/vsftpd/vsftpd.conf</code></p>
+<p>常用设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 端口号</span><br><span class="line">listen_port&#x3D;21</span><br><span class="line"># 监听IPv4 sockets</span><br><span class="line">listen&#x3D;YES</span><br><span class="line"># 这个设置后&#x2F;etc&#x2F;passwd内的账号才可以登陆</span><br><span class="line">local_enable&#x3D;YES</span><br><span class="line"># 这个设置后list中的用户只能访问自己的&#x2F;home下的目录</span><br><span class="line">chroot_local_user&#x3D;YES</span><br><span class="line">chroot_list_enable&#x3D;YES</span><br><span class="line">chroot_list_file&#x3D;&#x2F;etc&#x2F;vsftpd&#x2F;chroot_list</span><br><span class="line"># 允许匿名登陆</span><br><span class="line">anonymous_enable&#x3D;YES</span><br><span class="line"># 匿名登陆者的根目录</span><br><span class="line">anon_root&#x3D;&#x2F;var&#x2F;ftp</span><br><span class="line"># 本地用户登陆后的根目录</span><br><span class="line">local_root&#x3D;&#x2F;home</span><br><span class="line"># 被动模式 开启后相当于服务端开启范围内端口等待客户端来连接</span><br><span class="line">pasv_enable&#x3D;YES</span><br><span class="line">pasv_min_port&#x3D;4000</span><br><span class="line">pasv_max_port&#x3D;4500</span><br></pre></td></tr></table></figure>
+
+<p><strong>有问题？</strong></p>
+<ul>
+<li><code>local_root=/var/ftp</code>设置后用户进去还是到对应的<code>/home</code>文件夹。</li>
+<li><code>chroot_local_user=YES</code>设置后用户可以跳出对应的<code>/home</code>下的用户文件夹，有安全风险。</li>
+</ul>
+<p><strong>注意</strong></p>
+<ul>
+<li><p>监听sockets后，允许匿名，要开启被动模式用户才可以网站匿名进入。</p>
+</li>
+<li><p><code>pasv</code>相关的内容设置后好想要<code>systemctl restart</code>。</p>
+</li>
+</ul>
+<h1 id="详解"><a href="#详解" class="headerlink" title="详解"></a>详解</h1><p>安装</p>
+<p><a href="https://cloud.tencent.com/document/product/213/10912#user" target="_blank" rel="noopener">https://cloud.tencent.com/document/product/213/10912#user</a></p>
+<p>配置文件解析</p>
+<p><a href="https://www.cnblogs.com/zhangzhiqin/p/10170201.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhangzhiqin/p/10170201.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
     
 
 
@@ -637,71 +783,6 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/2021/01/22/notebook/websocket-start/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Bolin Shen">
-      <meta itemprop="description" content="Edlison blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Edlison is talking here.">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/22/notebook/websocket-start/" class="post-title-link" itemprop="url">websocket入门</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-01-22 15:26:15 / 修改时间：18:03:39" itemprop="dateCreated datePublished" datetime="2021-01-22T15:26:15+08:00">2021-01-22</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id=""><a href="#" class="headerlink" title=""></a></h1>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
 
   
   <nav class="pagination">
@@ -745,12 +826,30 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2018 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Bolin Shen</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
     </div>
@@ -761,6 +860,15 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -780,6 +888,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 

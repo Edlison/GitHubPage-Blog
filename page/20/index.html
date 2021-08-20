@@ -8,8 +8,8 @@
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/man-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/man-16x16.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="Edlison blog">
@@ -53,8 +53,17 @@
   };
 </script>
 
-  <title>Edlison is talking here.</title>
+  <title>Edlison is talking here. - Edlison blog</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1B9EHJMCZY"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1B9EHJMCZY');
+      }
+    </script>
 
 
 
@@ -106,6 +115,9 @@
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -127,6 +139,30 @@
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
 
 
 
@@ -166,29 +202,32 @@
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">209</span>
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">210</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
+          
         <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">100</span>
+          
+        <span class="site-state-item-count">101</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/edlison" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;edlison" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2VkbGlzb24=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;edlison"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:bolin.edlison.shen@gmail.com" title="E-Mail → mailto:bolin.edlison.shen@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOmJvbGluLmVkbGlzb24uc2hlbkBnbWFpbC5jb20=" title="E-Mail → mailto:bolin.edlison.shen@gmail.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -218,6 +257,108 @@
       
 
       
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/2021/02/01/spring/ioc-start/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bolin Shen">
+      <meta itemprop="description" content="Edlison blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Edlison is talking here.">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/02/01/spring/ioc-start/" class="post-title-link" itemprop="url">SpringIOC - Start</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-02-01 09:30:45 / 修改时间：13:40:02" itemprop="dateCreated datePublished" datetime="2021-02-01T09:30:45+08:00">2021-02-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Notebook/" itemprop="url" rel="index"><span itemprop="name">Notebook</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="IOC的本质"><a href="#IOC的本质" class="headerlink" title="IOC的本质"></a>IOC的本质</h1><p>![image-20210201102417224](/Users/edlison/Library/Application Support/typora-user-images/image-20210201102417224.png)</p>
+<p>![image-20210201102430827](/Users/edlison/Library/Application Support/typora-user-images/image-20210201102430827.png)</p>
+<p>![image-20210201102454419](/Users/edlison/Library/Application Support/typora-user-images/image-20210201102454419.png)</p>
+<h1 id="IOC创建对象的方式"><a href="#IOC创建对象的方式" class="headerlink" title="IOC创建对象的方式"></a>IOC创建对象的方式</h1><p>使用配置文件设置变量的值。将类注册为 <code>Bean</code>，通过<code>ApplicationContext</code>获取上下文。再用上下文取出<code>Bean</code>。</p>
+<h2 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h2><p>简单的通过Setter方法赋值。</p>
+<ol>
+<li>直接赋值</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">class</span>=<span class="string">"com.edlison.design.spring.ioc.pojo.UserDAO"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"this is username"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>引用</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"userService"</span> <span class="attr">class</span>=<span class="string">"com.edlison.design.spring.ioc.service.UserService"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"userDAO"</span> <span class="attr">ref</span>=<span class="string">"user"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><p>默认是无参构造。如果有构造函数，则有以下三种构造方式。</p>
+<ol>
+<li>通过下标构造</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">class</span>=<span class="string">"com.edlison.design.spring.ioc.pojo.UserDAO"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">"0"</span> <span class="attr">value</span>=<span class="string">"this is username by constructor"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>通过类型构造</li>
+<li>直接通过参数名</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"user"</span> <span class="attr">class</span>=<span class="string">"com.edlison.design.spring.ioc.pojo.UserDAO"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"this is username by constructor"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>在配置文件加载的时候，容器里的实例就已经被创建了，并且内存中<strong>仅有一个实例</strong>。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
     
 
 
@@ -571,109 +712,6 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/2021/01/29/spark/deploy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Bolin Shen">
-      <meta itemprop="description" content="Edlison blog">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Edlison is talking here.">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/01/29/spark/deploy/" class="post-title-link" itemprop="url">Spark - 部署</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-01-29 11:32:37 / 修改时间：15:19:33" itemprop="dateCreated datePublished" datetime="2021-01-29T11:32:37+08:00">2021-01-29</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Notebook/" itemprop="url" rel="index"><span itemprop="name">Notebook</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>从腾讯云镜像安装(这是内网地址)</p>
-<p><code>wget http://mirrors.tencentyun.com/apache/xxx</code></p>
-<p>解压到<code>~/applications</code></p>
-<p>创建软连接，方便管理不同版本。</p>
-<p><code>ln -s spark-3.0.1-bin-hadoop2.7 spark</code></p>
-<p><code>export SPARK_HOME=/home/ubuntu/applications/spark</code></p>
-<p>以后只要将软连接的指向改动到新版本，不需要改动环境变量。</p>
-<h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><h2 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h2><p><code>sudo apt install openjdk-11-jdk</code></p>
-<h2 id="使用Scala-Shell启动Spark"><a href="#使用Scala-Shell启动Spark" class="headerlink" title="使用Scala Shell启动Spark"></a>使用Scala Shell启动Spark</h2><p><code>spark-shell</code></p>
-<h2 id="简单的例子"><a href="#简单的例子" class="headerlink" title="简单的例子"></a>简单的例子</h2><figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> file = sc.textFile(<span class="string">"/home/ubuntu/documents/xxx.txt"</span>)</span><br><span class="line"><span class="comment">// 打印行数</span></span><br><span class="line">file.count()</span><br><span class="line"><span class="comment">// 打印第一行</span></span><br><span class="line">file.first()</span><br><span class="line"><span class="comment">// 过滤打印</span></span><br><span class="line">file.filter(line =&gt; line.contains(<span class="string">"spark"</span>)).count()</span><br></pre></td></tr></table></figure>
-
-<h2 id="启动节点"><a href="#启动节点" class="headerlink" title="启动节点"></a>启动节点</h2><h3 id="主节点"><a href="#主节点" class="headerlink" title="主节点"></a>主节点</h3><p><code>cd $SPARK_HOME/sbin</code></p>
-<p><code>./start-master.sh</code></p>
-<p>通过<code>ip:8080</code>可以web访问</p>
-<p>获取Master节点的Url</p>
-<p><code>spark://localhost.localdomain:7077</code></p>
-<h3 id="从节点"><a href="#从节点" class="headerlink" title="从节点"></a>从节点</h3><p><code>./start-slave.sh spark://localhost.localdomain:7077</code></p>
-<p>可以通过<code>jps</code>（显示当前的Java进程）查看启动的服务</p>
-<p>Web端可以看到有了Workers</p>
-<h3 id="用Shell连接Master"><a href="#用Shell连接Master" class="headerlink" title="用Shell连接Master"></a>用Shell连接Master</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MASTER=spark://localhost.localdomain:7077 spark-shell</span><br></pre></td></tr></table></figure>
-
-<p>Web端可以看到RunningApplications有了Shell</p>
-<h3 id="停止服务"><a href="#停止服务" class="headerlink" title="停止服务"></a>停止服务</h3><p><code>./stop-all.sh</code></p>
-<p><code>jps</code>查看</p>
-<h1 id="集群部署"><a href="#集群部署" class="headerlink" title="集群部署"></a>集群部署</h1><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>主节点配置环境变量<code>conf/spark-env.sh</code></p>
-<p>主节点配置从节点的主机名<code>conf/slaves</code>, 此时主机名要写入hosts中</p>
-<p>将spark整体文件拷贝到所有从节点，路径与主节点一致</p>
-<p>配置<strong>主节点到从节点</strong>的SSH Key无密码登录</p>
-<p>启动集群<code>sbin/start-all.sh</code></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
 
   
   <nav class="pagination">
@@ -717,12 +755,30 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2018 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Bolin Shen</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
 </div>
 
     </div>
@@ -733,6 +789,15 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
@@ -752,6 +817,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
