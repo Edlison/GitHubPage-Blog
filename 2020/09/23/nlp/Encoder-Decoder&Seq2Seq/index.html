@@ -21,13 +21,13 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"edlison.com","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="Encoder-Decoder 和 Seq2Seq 概述Encoder-Decoder将现实问题转化为数学问题 通过求解数学问题 从而解决现实问题  缺点： Encoder 和 Decoder之间只有一个向量C来传递信息，且C的长度固定。 当输入信息太长时，会丢掉一些信息。 Attention机制就是为了解决信息过长，信息丢失的问题。 Attention模型的特点是Encoder不再将整个输入序列">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nlp&#x2F;Encoder-Decoder&amp;Seq2Seq">
-<meta property="og:url" content="http://edlison.com/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/index.html">
+<meta property="og:url" content="http://blog.edlison.cc/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/index.html">
 <meta property="og:site_name" content="Edlison is talking here.">
 <meta property="og:description" content="Encoder-Decoder 和 Seq2Seq 概述Encoder-Decoder将现实问题转化为数学问题 通过求解数学问题 从而解决现实问题  缺点： Encoder 和 Decoder之间只有一个向量C来传递信息，且C的长度固定。 当输入信息太长时，会丢掉一些信息。 Attention机制就是为了解决信息过长，信息丢失的问题。 Attention模型的特点是Encoder不再将整个输入序列">
 <meta property="og:locale" content="zh_CN">
@@ -38,11 +38,16 @@
 <meta property="article:published_time" content="2020-09-23T03:57:03.864Z">
 <meta property="article:modified_time" content="2020-11-11T16:29:53.496Z">
 <meta property="article:author" content="Bolin Shen">
+<meta property="article:tag" content="Edlison">
+<meta property="article:tag" content=" edlison">
+<meta property="article:tag" content=" blog">
+<meta property="article:tag" content=" code">
+<meta property="article:tag" content=" solution">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://easy-ai.oss-cn-shanghai.aliyuncs.com/2019-10-28-encoder.png">
 
 
-<link rel="canonical" href="http://edlison.com/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/">
+<link rel="canonical" href="http://blog.edlison.cc/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/">
 
 
 <script class="page-configurations">
@@ -118,6 +123,7 @@
       <h1 class="site-title">Edlison is talking here.</h1>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">Edlison blog</p>
   </div>
 
   <div class="site-nav-right">
@@ -163,13 +169,13 @@
         <section class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Bolin Shen</p>
-  <div class="site-description" itemprop="description"></div>
+  <div class="site-description" itemprop="description">Edlison blog</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">208</span>
+          <span class="site-state-item-count">209</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -229,12 +235,12 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://edlison.com/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/">
+    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/2020/09/23/nlp/Encoder-Decoder&Seq2Seq/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Bolin Shen">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="Edlison blog">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
