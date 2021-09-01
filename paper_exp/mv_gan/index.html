@@ -22,13 +22,13 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"blog.edlison.com","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="遇到的坑网络的组合用列表的数据结构，存储Module。 使用 Python 的 list 添加的全连接层和它们的 parameters 并没有自动注册到我们的网络中。 解决方案：如果想要继承了nn.Module的网络组合多个子网络，需要通过nn.Sequential, nn.ModuleList等对网络参数进行注册。 计算Loss的两个Tensor形状不一致由于通过网络经过各种矩阵相乘，最后得到的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在GAN上实现Multi-View">
-<meta property="og:url" content="http://blog.edlison.cc/paper_exp/mv_gan/index.html">
+<meta property="og:url" content="http://blog.edlison.com/paper_exp/mv_gan/index.html">
 <meta property="og:site_name" content="Edlison is talking here.">
 <meta property="og:description" content="遇到的坑网络的组合用列表的数据结构，存储Module。 使用 Python 的 list 添加的全连接层和它们的 parameters 并没有自动注册到我们的网络中。 解决方案：如果想要继承了nn.Module的网络组合多个子网络，需要通过nn.Sequential, nn.ModuleList等对网络参数进行注册。 计算Loss的两个Tensor形状不一致由于通过网络经过各种矩阵相乘，最后得到的">
 <meta property="og:locale" content="zh_CN">
@@ -42,7 +42,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://blog.edlison.cc/paper_exp/mv_gan/">
+<link rel="canonical" href="http://blog.edlison.com/paper_exp/mv_gan/">
 
 
 <script class="page-configurations">
@@ -269,7 +269,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/paper_exp/mv_gan/">
+    <link itemprop="mainEntityOfPage" href="http://blog.edlison.com/paper_exp/mv_gan/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">

@@ -22,13 +22,13 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.edlison.cc","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"blog.edlison.com","root":"/","images":"/images","scheme":"Muse","version":"8.0.2","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="对Batch_size与lr的认识大Batch(Batch -&gt; Full)：好处：  更好的代表样本总体，更准确指向极值。 不同权重梯度差别大，学习率不统一。  坏处：  内存局限，无法一次性载入全部样本。 每个Batch，由于采样性差异，梯度修正值相互抵消。  小Batch(Batch -&gt; 1)：好处：  可以在一个epoch上迭代很多次，参数更新多次。  坏处：  每次修正都向">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Batch Size">
-<meta property="og:url" content="http://blog.edlison.cc/paper_exp/batch/index.html">
+<meta property="og:url" content="http://blog.edlison.com/paper_exp/batch/index.html">
 <meta property="og:site_name" content="Edlison is talking here.">
 <meta property="og:description" content="对Batch_size与lr的认识大Batch(Batch -&gt; Full)：好处：  更好的代表样本总体，更准确指向极值。 不同权重梯度差别大，学习率不统一。  坏处：  内存局限，无法一次性载入全部样本。 每个Batch，由于采样性差异，梯度修正值相互抵消。  小Batch(Batch -&gt; 1)：好处：  可以在一个epoch上迭代很多次，参数更新多次。  坏处：  每次修正都向">
 <meta property="og:locale" content="zh_CN">
@@ -39,7 +39,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://blog.edlison.cc/paper_exp/batch/">
+<link rel="canonical" href="http://blog.edlison.com/paper_exp/batch/">
 
 
 <script class="page-configurations">
@@ -266,7 +266,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.edlison.cc/paper_exp/batch/">
+    <link itemprop="mainEntityOfPage" href="http://blog.edlison.com/paper_exp/batch/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
